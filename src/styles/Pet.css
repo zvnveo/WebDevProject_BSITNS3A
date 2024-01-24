@@ -1,0 +1,92 @@
+.pet {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.petItem button {
+  display: block;
+  margin: 0 auto;
+}
+
+.petTitle {
+  font-family: cursive;
+  font-size: 60px;
+}
+
+.petList {
+  width: 70vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+
+/* MENU ITEM STYLING */
+.contact-link {
+  text-decoration: none;
+  color: white;
+}
+
+.petItem {
+  border-radius: 15px;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.petItem:hover {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.petItem div {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.petItem h1,
+.petItem p {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.petItem button {
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #121619;
+  height: 30px;
+  width: 100px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .petList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .petList {
+    grid-template-columns: 1fr;
+  }
+}
