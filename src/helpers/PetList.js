@@ -1,3 +1,9 @@
+
+import Pusa5 from "../assets/kitty1.jpg";
+import Pusa2 from "../assets/kitty2.jpg";
+import Pusa3 from "../assets/kitty3.jpg";
+import Pusa4 from "../assets/kitty4.jpg";
+import Pusa1 from "../assets/kitty5.jpg";
 import Pusa1 from "../assets/kitty1.jpg";
 import Pusa2 from "../assets/kitty2.jpg";
 import Pusa3 from "../assets/kitty3.jpg";
