@@ -28,6 +28,7 @@
   margin-left: 30px;
   color: #9dbc98;
   cursor: default;
+  text-align: center;
 }
 
 form {
@@ -87,4 +88,36 @@ form button {
 
 form button:hover {
   background-color: #7fa884;
+}
+
+.popup-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: wheat;
+  padding: 40px 60px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.popup-message p {
+  margin: 0;
+  font-size: 30px;
+  color: #9dbc98;
+  font-family: "Caprasimo", serif;
+}
+
+.popup-message button {
+  margin-top: 30px;
+  padding: 10px;
+  border: none;
+  background-color: #9dbc98;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 5px;
+  font-family: "Belanosima", sans-serif;
 }
