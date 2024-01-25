@@ -1,5 +1,5 @@
 import React from "react";
-import CatLeft from "../assets/catLeft.jpg";
+import CatLeft from "../assets/catLeft.png";
 import "../styles/Contact.css";
 
 function Contact() {

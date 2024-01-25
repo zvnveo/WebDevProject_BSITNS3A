@@ -1,28 +1,27 @@
 import React from "react";
-import { PetList } from "../helpers/PetList";
+import { Link } from "react-router-dom";
+import { PetList } from "../Helpers/PetList";
 import PetItem from "../components/PetItem";
 import "../styles/Pet.css";
 
 function Pet() {
-  const handleButtonClick = (button) => {
-    console.log(`Button clicked for ${button}`);
-  };
-
   return (
     <div className="pet">
-      <h1 className="petTitle">Our Menu</h1>
+      <h1 className="petTitle">Our Cats</h1>
       <div className="petList">
-        {PetList.map((petItem, key) => {
-          return (
-            <PetItem
-              key={key}
-              image={petItem.image}
-              name={petItem.name}
-              button={petItem.button}
-              onClick={() => handleButtonClick(petItem.button)}
-            />
-          );
-        })}
+        {PetList.map((petItem, key) => (
+          <PetItem
+            key={key}
+            image={petItem.image}
+            name={petItem.name}
+            description={petItem.description}
+            button={
+              <Link to="/contact" className="contact-link">
+                {petItem.button}
+              </Link>
+            }
+          />
+        ))}
       </div>
     </div>
   );
