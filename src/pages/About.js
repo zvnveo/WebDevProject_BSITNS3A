@@ -24,7 +24,7 @@ function About() {
         style={{ backgroundImage: `url(${Cats})` }}
       ></div>
       <div className="aboutBottom">
-        <h1> ABOUT US</h1>
+        <h1>About Us</h1>
         <p>
           Welcome to Whisker Welfare, a compassionate online platform dedicated
           to feline well-being. At Whisker Welfare, our mission is to connect
