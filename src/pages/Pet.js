@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { PetList } from "../helpers/PetList";
+import { PetList } from "../src/helpers/PetList";
 import PetItem from "../components/PetItem";
 import "../styles/Pet.css";
 
