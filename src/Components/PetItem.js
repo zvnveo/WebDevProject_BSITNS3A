@@ -1,12 +1,11 @@
 import React from "react";
 
-function PetItem({ image, name, description, button }) {
+function PetItem({ image, name, price }) {
   return (
-    <div className="petItem">
+    <div className="PetItem">
       <div style={{ backgroundImage: `url(${image})` }}> </div>
       <h1> {name} </h1>
-      <p>{description}</p>
-      <button> {button} </button>
+      <p> ${price} </p>
     </div>
   );
 }
